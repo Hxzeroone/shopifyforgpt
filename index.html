@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopify for ChatGPT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px #aaaaaa;
+        }
+        h1, h2, h3 {
+            color: #0C344B;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        p, li {
+            color: #333333;
+        }
+        form {
+            margin-top: 30px;
+        }
+        form input, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        form input {
+            background-color: #eeeeee;
+        }
+        form button {
+            background-color: #0C344B;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #094A66;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Shopify for ChatGPT</h1>
+        <h2>Automate your customer support with the power of AI</h2>
+        <p>
+          With Shopify for ChatGPT, say goodbye to the challenges of managing and responding to a high volume of support tickets. This platform integrates your Shopify orders and customer support queries coming via Gmail into one place. The power of GPT-4 AI helps you analyze queries, categorize them, and even auto-respond to common questions, freeing up your time to focus on growing your business. The seamless Gmail API integration ensures that all your customer communications remain up-to-date and easily accessible.
+        </p>
+        <img src="https://logos-world.net/wp-content/uploads/2020/11/Shopify-Logo.png" alt="Shopify and ChatGPT logo" style="width:100%; height:auto;">
+        <form id="shopify-form">
+            <input type="text" id="store-url" name="storeUrl" placeholder="Your Shopify Store URL">
+            <input type="email" id="email" name="email" placeholder="Your Support Email">
+            <button type="submit">Contact Us</button>
+        </form>
+
+        <h2>About Us</h2>
+        <p>We are a dedicated team of developers and AI enthusiasts who believe in the power of technology to simplify the complexities of business operations. Our mission is to help businesses automate their customer support and streamline their order management using the power of ChatGPT.</p>
+
+        <h2>Features</h2>
+        <ul>
+            <li><strong>Order Integration:</strong> Synchronize your Shopify orders directly into ChatGPT.</li>
+            <li><strong>Email Support:</strong> Link your Gmail account to manage support tickets in one place.</li>
+            <li><strong>AI Assistance:</strong> Utilize the power of GPT-4 AI to automatically categorize and respond to customer queries.</li>
+        </ul>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions about our service or would like to learn more, please don't hesitate to get in touch at <a href="mailto:info@shopifyforchatgpt.com">info@shopifyforchatgpt.com</a>.</p>
+    </div>
+    
+    <script>
+        document.getElementById('shopify-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            var storeUrl = document.getElementById('store-url').value;
+            var email = document.getElementById('email').value;
+            
+            // Here you can make an API call to your backend to perform the actual functionality
+            // This is just a placeholder
+            console.log('Store URL: ', storeUrl);
+            console.log('Support Email: ', email);
+        });
+    </script>
+</body>
+</html>
