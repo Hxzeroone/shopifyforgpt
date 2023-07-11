@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirect Page</title>
+  <script>
+    // Get the "code" parameter from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get('code');
+
+    // Redirect to localhost:3001 with the code parameter
+    if (code) {
+      window.location.href = `http://localhost:3001/auth_callback.html?code=${code}`;
+    } else {
+      // Display an error message if the "code" parameter is missing
+      document.body.innerHTML = 'Error: "code" parameter missing in the URL.';
+    }
+  </script>
+</head>
+<body>
+  <h1>Redirecting...</h1>
+</body>
+</html>
